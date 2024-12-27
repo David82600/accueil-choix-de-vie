@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Choix de vie – Services à la personne Toulouse, repassage, ménage à domicile </title>
+    <meta name="description" content="Choix de vie propose une large gamme de services à la personne sur Toulouse : ménage, repassage, aide à domicile…">
+    <meta name="language" content="fr">
+    <meta name="Geography" content="Toulouse, FR, 31300">
+    <meta name="customer" content="FR-C11016">
+    <meta name="author" content="">
+    <meta name="copyright" content="Proximedia">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google-site-verification" content="VgUojtu6dA56NpsrokcY06Lk6ld0HtT6L8si_Xou66o" /><link rel="icon" href="https://www.choixdevie-toulouse.fr/media/images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="FOLLOW" />
+
+    <link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/libs/font-awesome-4/css/font-awesome.min.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/libs/jquery/fancybox/jquery.fancybox.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/libs/superbanner/camera.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/libs/galleryn/galleryn.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/res/global/styles/validationEngine/validationEngine.jquery.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/res/global/styles/validationEngine/template.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/res/bebook/css/front/bizbook.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/res/global/styles/frogadmin/jquery-ui-1.7.1.custom.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/libs/uploadify/uploadify.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Contactv2/styles/front/contactv2-default.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Guestbookv2/styles/front/guestbookv2.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://www.choixdevie-toulouse.fr/media/css/template.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://www.choixdevie-toulouse.fr/media/css/custom.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Core/styles/sandwich.css" type="text/css" media="all"/>
+
+
+    <script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/jquery.1.7.2.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/jquery.ui.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/jPages/jPages.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/galleryn/galleryn.js"></script>
+
+    
+	
+
+        <meta property="og:title" content="Choix de vie – Services à la personne Toulouse, repassage, ménage à domicile ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.choixdevie-toulouse.fr">
+    <meta property="og:image" content="https://www.choixdevie-toulouse.fr/media/images/logo.png">
+    <meta property="og:site_name" content="Choix de vie">
+    
+    
+    <script type="text/javascript">
+      $(function() {
+        $('#my-mmenu').mmenu({
+          "extensions": ["border-full", "pagedim-black"]
+        });
+      });
+    </script>
+    <!--ipt type="text/javascript">
+       $(document).ready(function(){
+    		function calculateCost() {
+                const service = document.getElementById('service').value;
+                const hoursPerWeek = parseInt(document.getElementById('hours').value);
+                const frequency = document.getElementById('frequency').value;
+                const cesu = document.getElementById('cesu').value;
+
+                let totalCost = 0;
+                let fraisGestion = 6;
+                const hoursPerMonth = hoursPerWeek * (frequency === 'hebdo' ? 4 : 2);
+
+                // Logic for Ménage, Repassage for families or seniors
+                if (service === 'menage_famille') {
+                    totalCost = hoursPerMonth * 27.40; // Tarif fixe 27,40€/heure pour famille ou particulier
+                }
+
+                if (service === 'menage_seniors') {
+                    fraisGestion = 5.75; // Adjust frais de gestion for seniors
+                    totalCost = hoursPerMonth * 26.30; // Tarif fixe 26,30€/heure pour seniors
+                }
+
+                // Logic for Accompagnement de la personne dépendante (APA - PCH)
+                if (service === 'accompagnement') {
+                    // No frais de gestion for this service
+                    totalCost = hoursPerMonth * 26.40; // Tarif fixe 26,40€/heure
+                } else {
+                    totalCost += fraisGestion; // Add frais de gestion for other services
+                }
+    		}
+
+            // Reset form function
+            function resetForm() {
+                document.getElementById('service').selectedIndex = 0;
+                document.getElementById('hours').value = '';
+                document.getElementById('frequency').selectedIndex = 0;
+                document.getElementById('cesu').selectedIndex = 0;
+                document.getElementById('totalCost').textContent = '-';
+                document.getElementById('finalCost').textContent = '-';
+                document.getElementById('deductionText').textContent = '';
+                document.getElementById('fullYearDeductionText').textContent = '';
+                document.getElementById('infoText').style.display = 'none';
+                document.getElementById('resetButton').style.display = 'none';
+                document.getElementById('contactButton').style.display = 'none';
+              }
+         
+       })
+</script-->
+
+    
+        <script type="text/javascript">
+      $(document).ready(function() {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          if ($('#js-marketingSlider').length) {
+            $("#js-marketingSlider").camera({
+              height: "600px", /* à modifier */
+              navigation: false,
+              playPause: false,
+              pagination: false,
+              loader: 'none'
+            });
+          } ;
+        } else if (window.matchMedia("(max-width: 991px)").matches) {
+          if ($('#js-marketingSlider').length) {
+            $("#js-marketingSlider").camera({
+              height: "700px", /* à modifier */
+              navigation: false,
+              playPause: false,
+              pagination: false,
+              loader: 'none'
+            });
+          } ;
+        } else {
+          if ($('#js-marketingSlider').length) {
+            $("#js-marketingSlider").camera({
+              height: "875px", /* à modifier */
+              navigation: false,
+              playPause: false,
+              pagination: false,
+              loader: 'none'
+            });
+          } ;
+        }
+      });
+    </script>
+        
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.icon').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          dots: true,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
+    
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#tab-container").tabs("select",  $(this).attr("href"))
+
+
+
+                                 });
+
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMGE34ZNPQ"></script>
+    <!-- SCRIPT GOOGLE ANALYTICS -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent','default',{
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'personalization_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'security_storage': 'denied',
+            'functionality_storage': 'denied',
+        });
+        gtag('consent','update',{
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted',
+            'personalization_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'security_storage': 'granted',
+            'functionality_storage': 'granted',
+            'wait_for_update': 'denied',
+        });
+        
+        gtag('js', new Date());
+        
+        gtag('config', 'G-FMGE34ZNPQ', {'anonymize_ip': true });
+    </script>
+        
+    <link rel="canonical" href="https://www.choixdevie-toulouse.fr/"></head>
+
+  <body class="pageTemplate">
+    <div class="mm-page">
+      <header id="top">
+        <section class="marketing ">
+          <div class="marketing-slider">
+            
+    <div class="fluid_container">
+        <div class="camera_wrap  camera_black_skin" id="js-marketingSlider">
+                            <div data-thumb="https://www.choixdevie-toulouse.fr/media/images/gallery/1/thumb/12.jpg" data-src="https://www.choixdevie-toulouse.fr/media/images/gallery/1/big/12.jpg">
+                                    </div>
+                            <div data-thumb="https://www.choixdevie-toulouse.fr/media/images/gallery/1/thumb/15.jpg" data-src="https://www.choixdevie-toulouse.fr/media/images/gallery/1/big/15.jpg">
+                                    </div>
+                    </div>
+    </div>
+
+          </div>
+
+          <div class='container'>
+            <div class="topbar">
+
+              <div itemscope itemtype="http://schema.org/LocalBusiness" class="vcard">
+                <span class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="streetAddress" class="street-address">28 Bis, Rue Adolphe Coll  </span>
+                  <span itemprop="postalCode" class="postal-code"><span class="tiret"> - </span>31300</span>
+                  <span itemprop="addressLocality" class="locality">Toulouse</span>
+
+                </span>
+                <span class="tel work">
+                  <span class="t-tel"><span>    </span> Tél : </span> <a tabIndex="-1" href="tel:05 61 61 55 43"><span itemprop="telephone">05 61 61 55 43</span></a>
+                </span>
+
+                <div itemprop="name" class="fn org">Choix de vie</div>
+
+
+                <div class="mail">Email : <a href="mailto:contact@choixdevie-toulouse.fr"><span itemprop="email">contact@choixdevie-toulouse.fr</span></a>   </div>
+                <div class="tva">N°TVA : <span itemprop="vatID">43510059637</span></div>
+
+              </div>
+
+
+              <div class="social"><div class="networks_linking">
+<a href="https://www.facebook.com/choixdevieservice" target="_blank" class="networks_facebook"><i class="fab fa fa-facebook" aria-hidden="true"></i></a></div></div>	 
+
+
+            </div>  
+
+          </div>
+
+          <div class="marketing-wrapper">
+            <div class="container">
+              <div id="logo">
+                <a href="/" title="Choix de vie">
+                  <img src="https://www.choixdevie-toulouse.fr/media/images/logo.png" alt="Choix de vie" class="logo">
+                </a>
+              </div>
+              <div class="title">
+                <p>Au service des Toulousains depuis 16 ans<br><span class="sous-title">Éthique salariale et professionnalisme</span></p><!--<p>Choix de vie, votre aide &agrave; domicile</p>-->
+              </div>
+              <div class="cta-header">
+                <!--	<a class="call-to-action" title="" href="/fr/Contact-services-a-la-personne">Nous contacter </a>-->
+              </div>
+              <div id="nav-spacer"></div>
+              <nav class="main-nav">
+
+                
+			<ul class="sf-menu">
+							<li class="selected" id="menu_1">
+					<a href="/" >
+						Accueil</a>
+									</li>
+							<li class="" id="menu_2">
+					<a href="/fr/menage-a-domicile" >
+						M&eacute;nage</a>
+									</li>
+							<li class="" id="menu_3">
+					<a href="/fr/repassage-a-domicile" >
+						Repassage	</a>
+									</li>
+							<li class="" id="menu_4">
+					<a href="/fr/aide-a-domicile-personnalisee" >
+						Aide &agrave; domicile</a>
+									</li>
+							<li class="" id="menu_5">
+					<a href="/fr/tarif-aide-a-domicile" >
+						Fonctionnement et prix</a>
+									</li>
+							<li class="" id="menu_6">
+					<a href="/fr/societe-d-aide-a-domicile" >
+						Charte qualit&eacute;</a>
+									</li>
+							<li class="" id="menu_7">
+					<a href="/fr/nouveautes-aide-a-la-personne" >
+						Actualit&eacute;s </a>
+									</li>
+							<li class="" id="menu_17">
+					<a href="/fr/emploi-aide-a-domicile" >
+						Recrutement</a>
+									</li>
+							<li class="" id="menu_9">
+					<a href="/fr/contact-services-a-la-personne" >
+						Contact</a>
+									</li>
+																	</ul>
+									
+                <nav class="language"></nav>
+
+              </nav>
+            </div>
+
+          </div>
+          <div class="header-scroll-arrow"></div>
+        </section>
+      </header>
+      <div class="reseaux-fixe">
+        <div class="mark1_plugin"><a class="readmore" href="/fr/contact-services-a-la-personne">Demande de  prestation</a></div>  
+        <div class="mark2_plugin hidden-lg hidden-md hidden-sm"><a class="readmore" href="tel:05 61 61 55 43">Appeler</a></div> 
+      </div>
+      <a href="#my-mmenu" id="openMobileNav"><i class="fa fa-bars"></i></a>
+      <nav id="my-mmenu">
+        
+			<ul>
+							<li class="selected" >
+					<a href="/" >
+						Accueil</a>
+									</li>
+							<li class="" >
+					<a href="/fr/menage-a-domicile" >
+						M&eacute;nage</a>
+									</li>
+							<li class="" >
+					<a href="/fr/repassage-a-domicile" >
+						Repassage	</a>
+									</li>
+							<li class="" >
+					<a href="/fr/aide-a-domicile-personnalisee" >
+						Aide &agrave; domicile</a>
+									</li>
+							<li class="" >
+					<a href="/fr/tarif-aide-a-domicile" >
+						Fonctionnement et prix</a>
+									</li>
+							<li class="" >
+					<a href="/fr/societe-d-aide-a-domicile" >
+						Charte qualit&eacute;</a>
+									</li>
+							<li class="" >
+					<a href="/fr/nouveautes-aide-a-la-personne" >
+						Actualit&eacute;s </a>
+									</li>
+							<li class="" >
+					<a href="/fr/emploi-aide-a-domicile" >
+						Recrutement</a>
+									</li>
+							<li class="" >
+					<a href="/fr/contact-services-a-la-personne" >
+						Contact</a>
+									</li>
+																	</ul>
+									
+      </nav>
+
+
+
+<section class="content content-home">
+    <div class="container">
+        <article>
+            <nav class="language">
+                
+            </nav>
+            <div class="text-resize">
+                
+    <div class="text-resize">
+        <div class="row"><div class="col-md-5"><div class="img"><img class="img-responsive image-left fr-fic fr-dii" title="Nos services à la personne sur Toulouse et son secteur" src="/media/images/upload/img-content.jpg" alt="Nos services à la personne sur Toulouse et son secteur"></div></div><div class="col-md-7"><h1>Notre service de ménage à domicile sur Toulouse</h1><p>Choix de Vie propose à <strong>Toulouse</strong> un service de <strong>ménage à domicile</strong> différent des grands groupes et des grandes enseignes nationales. Créée par Erika Monpontet et David Guéron en 2009 et sous la direction de Nathalie Pierre, l'agence de ménage Choix de Vie bénéficie de l'autorisation du Conseil Départemental. Choix de Vie est une structure indépendante et locale véritablement impliquée dans le bien-être de ses collaboratrices et la satisfaction de ses client(e)s. Choix de Vie privilégie une relation de proximité et de confiance en accord avec ses valeurs de professionnalisme, de travail bien fait et d'éthique managériale.</p></div></div><div class="row"><div class="col-md-7"><div class="box-light box"><h2>Structure locale et indépendante, ça change tout !</h2><p>Choix de Vie, c'est une équipe dynamique et professionnelle, une entreprise locale à taille humaine qui propose à ses client(e)s des prestations de confort pour la réalisation de l'ensemble de vos tâches ménagères. Vous pouvez enfin soulager votre quotidien et conjuguer votre vie privée et votre vie professionnelle en toute simplicité tout en ayant l'assurance de faire appel à des professionnelles discrètes, ponctuelles et valorisées par une équipe encadrante attentive au bien-être de ses collaboratrices, et cela change tout !<br>Choix de Vie, c'est avant tout une éthique managériale garante d'un travail bien fait : CDI, mutuelle, primes, frais kilométriques, conciliation vie personnelle/vie professionnelle pour toutes nos collaboratrices. Une ambiance chaleureuse et conviviale qui fait la renommée de Choix de Vie à Toulouse.</p><p>Alors lancez-vous ! Terminées le temps passé au ménage, nos professionnelles dynamiques et disponibles seront toujours au service de votre quotidien. La <a href="/fr/societe-d-aide-a-domicile">charte qualité de Choix de Vie</a> vous assure le meilleur des <strong>services à domicile</strong> avec des prestations parfaitement adaptées à votre mode de vie.</p><p>Pour votre <a href="/fr/repassage-a-domicile">repassage&nbsp;</a>ou votre <a href="/fr/menage-a-domicile">ménage</a>, notre agence de ménage à domicile vous aidera en simplifiant toutes vos démarches. Ensemble, nous établirons un cahier des charges dans lequel apparaîtront clairement nos tâches à réaliser et vos objectifs prioritaires. Grâce à une étude personnalisée de vos besoins, vous aurez l'assurance d'une prestation de qualité, qui suit vos exigences. <a href="/fr/contact-services-a-la-personne" title="Contact">Contactez-nous pour une demande de devis</a>.</p></div></div><div class="col-md-5"><div class="box-light box"><h2>Contactez Choix de Vie pour votre ménage et votre repassage</h2><p>Pour faire appel aux services de ménage de nos intervenantes, <a href="/fr/contact-services-a-la-personne">contactez notre agence d'aides ménagères</a> via notre formulaire en ligne ou par téléphone au 05 61 61 55 43. Nous pourrons répondre à toutes vos questions et conviendrons d'un rendez-vous dans les meilleurs délais pour établir votre cahier des charges.</p><p>90 % de nos clients nous confient leurs clés, alors n'hésitez plus, faites confiance à notre entreprise locale de services à la personne. Vous aurez l'assurance d'avoir une intervenante dédiée, avec un planning régulier correspondant à vos contraintes, ainsi qu'une équipe support qui vous connait.</p><p>Nous intervenons à Toulouse.</p></div></div></div>
+    </div>
+
+                
+            </div>
+            <div class="clearfix"></div>
+        </article>
+    </div>
+</section>
+<section class="icones">
+ <div class="container">
+            <div class="row"><div class="col-sm-4"><div class="bx-txt box"><div class="icon icon1">&nbsp;</div><h4>Ménage</h4><div class="desc"><p>Choix de Vie réalise des prestations complètes de ménage à domicile sur Toulouse : aide-ménagère, gouvernante, prestations ponctuelles avant ou après déménagement.</p></div><a class="link" title="ménage" href="/fr/menage-a-domicile">Ménage</a></div></div><div class="col-sm-4"><div class="bx-txt box"><div class="icon icon2">&nbsp;</div><h4>Repassage</h4><div class="desc"><p>Choix de Vie assure un service de repassage à domicile à Toulouse : bénéficiez de prestations de qualité aux finitions soignées.</p></div><a class="link" title="Repassage" href="/fr/repassage-a-domicile">Repassage</a></div></div><div class="col-sm-4"><div class="bx-txt box"><div class="icon icon3">&nbsp;</div><h4>Aide à domicile</h4><div class="desc"><p>Choix de Vie assure des prestations d'aide à domicile personnalisées à Toulouse : préparation de repas à domicile, services à la personne, aide et accompagnement à domicile ou à partir du domicile...</p></div><a class="link" title="Aide à domicile" href="/fr/aide-a-domicile-personnalisee">Aide à domicile</a></div></div></div>
+            </div>
+ </section> 
+
+
+<section class="content content-home">
+    <div class="container">
+        <article>
+            <nav class="language">
+                
+            </nav>
+            <div class="text-resize">
+                <div class="box-dark box"><h2>Bénéficiez de réduction ou crédit d'impôt</h2><p>Faire appel à nos services à domicile vous permet de bénéficier d'une réduction de votre impôt sur le revenu à hauteur de 50% des sommes engagées sur l'année civile au titre des&nbsp;<strong>services à la personne&nbsp;</strong>(dans la limite d'un plafond établi par les services fiscaux). Une attestation fiscale reprenant la totalité des prestations des sommes versées vous est envoyée par votre agence Choix de Vie en début d'année suivante.<br>Vous n'êtes pas imposable sur le revenu ? Vous pouvez bénéficier d'un crédit d'impôt dans les mêmes conditions.</p></div>
+            </div>
+            <div class="clearfix"></div>
+        </article>
+    </div>
+</section>
+<section class="recrutement">
+ <div class="container">
+        <article>    
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                <h3>Demande de prestation</h3>
+                            <p><form id="contactForm_3" class="contactForm" data-contactv2="3" data-action="https://www.choixdevie-toulouse.fr/contactv2/submit/" enctype="multipart/form-data" data-init="{&quot;redirect&quot;:&quot;\/fr\/merci&quot;,&quot;AWConversionId&quot;:null,&quot;AWFormSendingLabel&quot;:null,&quot;isMobile&quot;:false,&quot;i18n&quot;:{&quot;send_try_later&quot;:&quot;Veuillez r\u00e9essayer plus tard.&quot;,&quot;send_error&quot;:&quot;Une erreur technique est survenue lors de l&#039;envoie du formulaire.&quot;,&quot;send_error_server&quot;:&quot;Erreur de connexion au serveur.&quot;,&quot;send_success&quot;:&quot;Votre message a bien \u00e9t\u00e9 envoy\u00e9. Merci.&lt;br&gt;Les donn\u00e9es transmises ne seront exploit\u00e9es que dans le but de traiter votre demande conform\u00e9ment \u00e0 notre politique de traitement des donn\u00e9es priv\u00e9es.&quot;}}">
+    <input type="hidden" name="contactID" value="3">
+    <input type="hidden" name="lang" value="fr">
+    <input type="hidden" name="noReply" value="1">
+    <input type="hidden" name="sec" id="sec" value="b0b465a4a4d178d5784cb4b365e717b47fdf8bc5507ca08cc86c3d9130014cdcc24d78355220f932fb881a42aa7a25852f5c42de653e944c59589098f5e07dfc">
+    <input type="hidden" id="formats" value="">
+    <input type="text" id="mail-valid" name="mail-valid" style="position:absolute;left:-5000px;" value="" autocomplete="off" readonly>
+            <fieldset >
+                                                <legend class="contact-field-legend contact-field-legend-first">Prestation - accueil</legend>
+                                                                    <div class='two-column contact-field-item id_name_1 contact-field-type_single_line_text' id='contact-field-id_name_1'>
+    <input type="hidden" name='item[name_1][id]' value='name_1'>
+    <input type="hidden" name='item[name_1][label]' value="Nom">
+            
+    
+    <div class="contact-field-element">
+    <input id='form3-name_1' type="text" value=''
+           name='item[name_1][value]'
+           class='form-field two-column'
+           placeholder="Nom *"           required="required" >
+</div>
+        
+</div>
+                            <div class='two-column contact-field-item id_single_line_text_1 contact-field-type_single_line_text' id='contact-field-id_single_line_text_1'>
+    <input type="hidden" name='item[single_line_text_1][id]' value='single_line_text_1'>
+    <input type="hidden" name='item[single_line_text_1][label]' value="Pr&eacute;nom">
+            
+    
+    <div class="contact-field-element">
+    <input id='form3-single_line_text_1' type="text" value=''
+           name='item[single_line_text_1][value]'
+           class='form-field two-column'
+           placeholder="Pr&eacute;nom "           >
+</div>
+        
+</div>
+                            <div class='two-column contact-field-item id_email_1 contact-field-type_email' id='contact-field-id_email_1'>
+    <input type="hidden" name='item[email_1][id]' value='email_1'>
+    <input type="hidden" name='item[email_1][label]' value="Email">
+            
+    
+    <div class="contact-field-element">
+    <input id='form3-email_1' type="email" value=''
+           name='item[email_1][value]'
+           class='form-field two-column'
+           placeholder="Email *"           required="required" >
+</div>
+        
+</div>
+                            <div class='two-column contact-field-item id_phone_1 contact-field-type_phone' id='contact-field-id_phone_1'>
+    <input type="hidden" name='item[phone_1][id]' value='phone_1'>
+    <input type="hidden" name='item[phone_1][label]' value="T&eacute;l&eacute;phone">
+            
+    
+    <div class="contact-field-element">
+    <input id='form3-phone_1' type="number" value=''
+           name='item[phone_1][value]'
+           class='form-field'
+           placeholder="T&eacute;l&eacute;phone "            >
+</div>
+        
+</div>
+                            <div class=' contact-field-item id_checkboxes_1 contact-field-type_checkboxes' id='contact-field-id_checkboxes_1'>
+    <input type="hidden" name='item[checkboxes_1][id]' value='checkboxes_1'>
+    <input type="hidden" name='item[checkboxes_1][label]' value="Service souhait&eacute; ">
+            
+    <label class='contact-field-label' for='form3-checkboxes_1'>Service souhait&eacute; </label>
+    
+    <div class="contact-field-element">
+    <ul class="list-checkbox-wrap" >
+            <li class="contact-field-option">
+            <input  class="form-field-checkbox"
+                   name="item[checkboxes_1][value][0]" type="checkbox"
+                   value="Ménage à domicile "
+                   id="form3-checkboxes_1_0">
+            <label for="form3-checkboxes_1_0">Ménage à domicile </label>
+        </li>
+            <li class="contact-field-option">
+            <input  class="form-field-checkbox"
+                   name="item[checkboxes_1][value][1]" type="checkbox"
+                   value="Repassage"
+                   id="form3-checkboxes_1_1">
+            <label for="form3-checkboxes_1_1">Repassage</label>
+        </li>
+            <li class="contact-field-option">
+            <input  class="form-field-checkbox"
+                   name="item[checkboxes_1][value][2]" type="checkbox"
+                   value="Aide à domicile"
+                   id="form3-checkboxes_1_2">
+            <label for="form3-checkboxes_1_2">Aide à domicile</label>
+        </li>
+        </ul>
+    <div id="contactv2-checkboxes_1-error" class="contact-field-error" style="display: none;">Ce champ est obligatoire</div>
+</div>
+        
+</div>
+                            <div class=' contact-field-item id_comments_1 contact-field-type_paragraph' id='contact-field-id_comments_1'>
+    <input type="hidden" name='item[comments_1][id]' value='comments_1'>
+    <input type="hidden" name='item[comments_1][label]' value="Votre message">
+            
+                
+    <div class="contact-field-element">
+            <textarea id="form3-comments_1" maxlength="10000" class="form-field" type="text" rows="5" cols="30" name="item[comments_1][value]"
+                  placeholder="Votre message *"                required="required"></textarea>
+    </div>
+        
+</div>
+                    </fieldset>
+    
+    <div class="gdpr_policy">
+        <input type="checkbox" id="form3-gdpr" name="gdpr" required>
+        <label for="form3-gdpr">
+            J'ai lu et j'accepte <a href ="/fr/confidentiality_ws" target="_blank">les conditions générales d'utilisation</a>
+        </label>
+    </div>
+
+            <script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
+                    <div class="g-recaptcha" data-sitekey="6Lc01E0UAAAAAKQ-slmdUgQj9qRHmXmdAV30JwM8"></div>
+            <div id="contact-captcha-error" class="contact-field-error" style="display: none;">Merci de confirmer que vous n'êtes pas un robot.</div>
+            <div class="contact-submit">
+                <input type="button" id="button_button_form_contactv2_3" value="Envoyer" onclick="beforeSend(3);" class="form-submit-button">
+                <input type="submit" id="button_submit_form_contactv2_3" style="display: none;">
+            </div>
+            </form>
+<div id="contactv2-confirm-3" class="sendConfirm" style="display: none;"></div>
+    
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            contactv2 = {};
+            contactv2.redirect = "\/fr\/merci";
+            contactv2.AWConversionId = null;
+            contactv2.AWFormSendingLabel = null;
+            contactv2.isMobile = false;
+            contactv2.i18n = {
+                send_try_later: "Veuillez r\u00e9essayer plus tard.",
+                send_error: "Une erreur technique est survenue lors de l'envoie du formulaire.",
+                send_error_server: "Erreur de connexion au serveur.",
+                send_success: "Votre message a bien \u00e9t\u00e9 envoy\u00e9. Merci.<br>Les donn\u00e9es transmises ne seront exploit\u00e9es que dans le but de traiter votre demande conform\u00e9ment \u00e0 notre politique de traitement des donn\u00e9es priv\u00e9es."            };
+        }, false);
+    </script>
+</p>
+            </div>
+        </div>
+        </article>
+    </div>
+</section>
+<section class="newsletter-home">
+    <div class="container">
+    <article>
+        <h1>Newsletter</h1>
+        <div id="NewsletterForm">
+        
+<span id="confirm-msg" data-content="Votre inscription a bien été prise en compte" style="display: none;"></span>
+<span id="mail-registered-msg" data-content="Cet e-mail est déjà dans notre liste d'envoi" style="display: none;"></span>
+<span id="pending-msg" data-content="En cours..." style="display: none;"></span>
+<span id="invalid-mail-msg" data-content="Votre e-mail est requis et doit être valide." style="display: none;"></span>
+<span id="error-msg" data-content="Une erreur est survenue lors de votre inscription à notre newsletter. Merci de réessayer plus tard ou de contacter le responsable du site." style="display: none;"></span>
+<span id="return-url" data-content="https://www.choixdevie-toulouse.fr" style="display: none;"></span>
+
+<form name="form-nl" id="form-nl" method="post" data-action="https://www.choixdevie-toulouse.fr/newsletterv2/subscribe">
+    <input type="hidden" id="subscriber-lang" name="subscriber[lang]" value="fr" />
+    <input type="hidden" id="subscriber-real-lang" name="lang" value="fr" />
+    <input type="hidden" id="captcha-on" name="captchaOn" value="0" />
+    <input type="hidden" name="sec" id="sec" value="9b65cb638e889313fe095978fb1fdabea505c5d3dc2d39bde12e05c6d09ec733ca5c28288758ce6e6c126272b40deebd9a6a43088590452131150cd70b340700">
+
+    <input type="text" name="secondaryName" id="secondaryName" style="display:none;" />
+
+    <fieldset>
+        <ol>
+            <li class="odd" id="NewsletterFirstNameHeader">
+                <label class="field-title" for="subscriber-firstName">Prénom : </label>
+                <input type="text" id="subscriber-firstName" name="subscriber[firstName]" class="text-input txtbox-long" value="" title="Votre prénom est requis et doit contenir entre 2 et 255 caractères."  placeholder="Prénom" >
+            </li>
+            <li class="even" id="NewsletterLastNameHeader">
+                <label class="field-title" for="subscriber-lastName">Nom : </label>
+                <input type="text" id="subscriber-lastName" name="subscriber[lastName]" class="text-input txtbox-long" value="" title="Votre nom est requis et doit contenir entre 2 et 255 caractères."  placeholder="Nom">
+            </li>
+            <li class="odd" id="NewsletterEmailHeader">
+                <label class="field-title" for="subscriber-email">Email : <span class="required">*</span></label>
+                <input id="subscriber-email" class="text-input txtbox-long" type="email" name="subscriber[email]" value="" title="Votre e-mail est requis et doit être valide." required placeholder="Email *" />
+            </li>
+                                    <li class="even" id="NewsletterListHeader">
+                
+                                    <input type="hidden" name="lists[]" value="2" />
+                    <input type="hidden" name="send[2]" value="0" />
+                    <input type="hidden" name="listName[2]" value="Mes abonnés" />
+                            </li>
+                        <!-- captcha newsletter -->
+            
+            <li class="gdpr_policy">
+                <label for="gdpr" style="display: block; cursor: pointer;">
+                    <input type="checkbox" style="display: inline !important" id="gdpr" name="gdpr" required> J'ai lu et j'accepte <a href ="/fr/confidentiality_ws" target="_blank">les conditions générales d'utilisation</a>
+                </label>
+            </li>
+
+            <li class="submit" id="NewsletterSubmitHeader"><input type="button" onClick="onSend(); return false;" id="subscriber-submit" value="S'inscrire" /></li>
+            <li style="display: none;"><input type="submit" id="button_submit_form_newsletter" style="display: none;"></li>
+
+        </ol>
+
+    </fieldset>
+</form>
+
+<div id="newsletter-confirm-message" style="display: none;"></div>
+
+<script src="https://cdnnen.proxi.tools/assets/Newsletterv2/scripts/front/newsletterSubscribe.js?ver=201"></script>
+
+<script type="text/javascript">
+    let qNewsletter = $('.QapTchaNewsletter');
+    if(qNewsletter.length){
+        qNewsletter.QapTcha( { disabledSubmit:true,autoRevert:true,autoSubmit:false } );
+
+    }
+</script>
+    </article>
+    </div>
+</section>
+<footer class="footer">
+    
+    
+    
+       <!-- Messenger Plug-in Discussion Code -->
+    <!--<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>-->
+
+      <!-- Your Plug-in Discussion code -->
+      <!--<div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="1679242515486839">
+      </div>-->
+      
+      
+      <div class="map">
+            <div class="box_googlemapsv2">
+                    <iframe frameborder="0" scrolling="no" src="https://www.choixdevie-toulouse.fr/googlemaps/map/1?lang=fr" width="100%" height="100%" allowfullscreen></iframe>
+            </div>
+
+    </div>
+    <div class="container">
+         <div class="foot">
+        <div class="row">
+            <div class="col-md-7 col-md-push-5">
+                 <div class="row">
+            <div class="col-md-4">
+				<a href="/" title="Choix de vie"><img src="https://www.choixdevie-toulouse.fr/media/images/footer-logo.png" class="footer-logo logo" alt="Choix de vie"></a>
+				
+            </div>
+            <div class="col-md-4">
+           
+                <div itemscope itemtype="http://schema.org/LocalBusiness" class="footer-card">
+                    <div class="contact">
+                       <h4>contact</h4>
+                    <div itemprop="name">Choix de vie</div>
+                    <div class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <div itemprop="streetAddress">28 Bis, Rue Adolphe Coll  </div>
+                        <span itemprop="postalCode">31300</span>
+                        <span itemprop="addressLocality">Toulouse</span>
+                    </div>
+                      <div class="tel work">
+                       Tél. <a tabIndex="-1" href="tel:05 61 61 55 43"><span itemprop="telephone">05 61 61 55 43</span></a>
+                    </div>
+                    <div class="tel cell">
+                        <a tabIndex="-1" href="tel:"><span itemprop="telephone"></span></a>
+                    </div>
+					<!--<div class="mail">Email : <a href="mailto:contact@choixdevie-toulouse.fr"><span itemprop="email">contact@choixdevie-toulouse.fr</span></a></div>-->
+					<!--<div class="tva">N°TVA : <span itemprop="vatID">43510059637</span></div>-->
+                </div>
+                </div>
+               </div>
+            <div class="col-md-4">
+              
+<!--				<div class="partage-title">Partager :</div>-->
+                <div class="horaires">
+                            <h4>horaires</h4>
+                            <div class="hor">
+                    <p><strong>Lundi au vendredi&nbsp;:</strong><br /> 9h-17h</p>
+                     <div class="social-footer"><div class="networks_linking">
+<a href="https://www.facebook.com/choixdevieservice" target="_blank" class="networks_facebook"><i class="fab fa fa-facebook" aria-hidden="true"></i></a></div></div>	
+                </div></div>
+         </div>
+            </div>
+       
+        </div>        
+    </div>
+    </div>
+     </div>
+    <div id="ajaxGdprContent"></div>
+<link rel="stylesheet" href="https://cdnnen.proxi.tools/assets/Cookies/styles/cookies.css" type="text/css" media="all"/>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			async function reopenModalAjax() {
+				let url = '/fr/cookies-policy-modal';
+
+				let cookies = async function() {
+					return await (await fetch(url,  {cache: 'no-cache'})).text();
+				};
+				document.querySelector('#ajaxGdprContent').innerHTML = await cookies();
+				document.querySelector('#sdgdpr_modal_wrapper').style.display = 'block';
+				initCookiesFunctions();
+				try {
+					setCheckboxByCookies()
+				}catch (e) {
+				}
+				return false;
+			}
+
+			document.querySelector('#reopenCookiesModalLink').addEventListener('click', (event)=>{
+				reopenModalAjax();
+			});
+
+		});
+	</script>
+
+	<div class="btn-cookies-pos">
+		<a href="javascript:void(0);" id="reopenCookiesModalLink" class="btn-cookies-link"><i class="icon-setting"></i> Paramètres cookies</a>
+	</div>
+<script type="text/javascript" id="cookiegpdr"
+		src="https://cdnnen.proxi.tools/assets/Cookies/scripts/cookiegdpr.js?r=97660"
+		data-cookies="CookieGDPR2"
+		data-cookies-domain="www.choixdevie-toulouse.fr"
+		data-cookies-path="/"
+		data-cookies-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-ad="CookieGDPRAD"
+		data-cookie-ad-domain="www.choixdevie-toulouse.fr"
+		data-cookie-ad-path="/"
+		data-cookie-ad-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-analytics="CookieGDPRAN"
+		data-cookie-analytics-domain="www.choixdevie-toulouse.fr"
+		data-cookie-analytics-path="/"
+		data-cookie-analytics-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-ad-storage="CookieGDPRADST"
+		data-cookie-ad-storage-domain="www.choixdevie-toulouse.fr"
+		data-cookie-ad-storage-path="/"
+		data-cookie-ad-storage-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-ad-user-data="CookieGDPRADUD"
+		data-cookie-ad-user-data-domain="www.choixdevie-toulouse.fr"
+		data-cookie-ad-user-data-path="/"
+		data-cookie-ad-user-data-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-ad-personalized="CookieGDPRADPERSO"
+		data-cookie-ad-personalized-domain="www.choixdevie-toulouse.fr"
+		data-cookie-ad-personalized-path="/"
+		data-cookie-ad-personalized-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-tracking="CookieGDPRTracking"
+		data-cookie-tracking-domain="www.choixdevie-toulouse.fr"
+		data-cookie-tracking-path="/"
+		data-cookie-tracking-expiration="Sat, 27 Dec 2025 09:50:35"
+		data-cookie-has-analytics="true">
+</script>
+</footer>
+<footer class="footer2 footer">
+    <div class="container">
+		<div class="footer-nav">
+            <p>
+                   <div id="ContainerBlockSocial" class="ContainerBlockSocial">
+																		<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.choixdevie-toulouse.fr/" title="Facebook" target="_blank" style="fill: #fff;background-color: #4267B2;padding: 5px 8px 5px 8px;border-radius: 3px;display: inline-grid;" class="link-ico share-facebook"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="vertical-align: inherit;" class="svg-ico svg-facebook"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+															<a href="https://twitter.com/intent/tweet?url=https://www.choixdevie-toulouse.fr/" title="X" target="_blank" style="fill: #fff;background-color: #000;padding: 5px;border-radius: 3px;display: inline-grid;" class="link-ico share-x"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="vertical-align: inherit;" class="svg-ico svg-x"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+															</div>
+
+                <small>
+                    <a title="Mentions légales" href="/fr/mentions-legales">
+                        Mentions légales
+                    </a>
+                    
+                </small>
+            </p>
+        </div>
+       
+        </div>
+</footer>
+
+<!-- javascripts -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/fancybox/jquery.mousewheel.pack.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/superbanner/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/superbanner/camera.min.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Contactv2/scripts/front/contactv2.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/jquery/validationEngine/jquery.validationEngine-fr.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/libs/uploadify/jquery.uploadify.v2.1.4.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/res/global/js/QapTcha/jquery.ui.touch.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/res/global/js/QapTcha/QapTcha.jquery.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Guestbookv2/scripts/front/guestbookv2.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/res/guestbook/js/front/jquery.cleditor.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/res/guestbook/js/front/jquery.cleditor.icon.js"></script>
+<script type="text/javascript" src="https://www.choixdevie-toulouse.fr/media/js/app.min.js"></script>
+<script type="text/javascript" src="https://cdnnen.proxi.tools/assets/Core/scripts/sandwich.js"></script>
+
+
+<script>
+  $(document).ready(function(){
+              $(".header-scroll-arrow").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".content").offset().top
+		}, 1000);
+		});
+		});
+  </script>
+<script>
+    var this_url=document.location.href;
+    //alert(this_url);
+    if(this_url.indexOf('#place') != -1){
+        $('#marche').hide();
+        $('#enfant').hide();
+        $('#carte').hide();
+        $('#place').show();
+    }
+
+</script>
+
+
+
+            <script type="text/javascript">
+                var _paq = _paq || [];
+                _paq.push(["trackPageView"]);
+                _paq.push(["enableLinkTracking"]);
+                (function() {
+                    var u="//tracker.proxi.tools/";
+                    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+                    _paq.push(["setSiteId", "9730"]);
+                    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+                    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+                })();
+            </script>
+<script>
+ if(window.location.href.indexOf("#") != -1){
+var urlHash = window.location.href.split("#")[1];
+				if (urlHash.length > 0){
+					$('html,body').animate({
+						scrollTop: $('#' + urlHash).offset().top - 60
+					}, 1500, 'swing');
+                    }
+ }
+</script>
+<a class="cd-top" href="#0">Top</a>
+</div>
+</body>
+</html>
+
+
